@@ -4,3 +4,6 @@ Parts and their pinouts come from the Fritzing parts library,
 https://github.com/fritzing/fritzing-parts, licensed CC BY-SA 3.0:
 
 - Raspberry Pi A (core/Raspberry_Pi_A.fzp), by Fabian Althaus
+
+These parts' pictures were drawn for this design, from their pins or by its
+agent, and are licensed with the hardware (CERN-OHL-S-2.0): 16 GB card, Raspberry Pi OS Lite 32-bit bookworm, Home LAN, Home Wifi, Outdoor door station, Spare Android phone, Samsung Galaxy A50, USB HDMI grabber.

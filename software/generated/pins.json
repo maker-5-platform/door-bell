@@ -1,0 +1,113 @@
+{
+ "boards": [
+  {
+   "block": "b-6kswk8a0",
+   "name": "Raspberry Pi 1 Model B",
+   "class": "RaspberryPi1ModelB",
+   "pins": [
+    {
+     "n": 2,
+     "name": "5V",
+     "role": "power",
+     "gpio": null,
+     "to": [
+      "12 V → 5 V 3 A step-down · OUT+"
+     ],
+     "const": "P_5V"
+    },
+    {
+     "n": 6,
+     "name": "GND",
+     "role": "ground",
+     "gpio": null,
+     "to": [
+      "12 V → 5 V 3 A step-down · OUT-"
+     ],
+     "const": "GND"
+    },
+    {
+     "n": 33,
+     "name": "LAN",
+     "role": "",
+     "gpio": null,
+     "to": [
+      "Ethernet cable to the door, or a Linux-friendly USB Wi-Fi stick · End B"
+     ],
+     "const": "LAN"
+    },
+    {
+     "n": 34,
+     "name": "HTMI",
+     "role": "",
+     "gpio": null,
+     "to": [
+      "USB HDMI grabber · USB"
+     ],
+     "const": "HTMI"
+    },
+    {
+     "n": 35,
+     "name": "USB 1",
+     "role": "",
+     "gpio": null,
+     "to": [
+      "Spare Android phone, Samsung Galaxy A50 · USB"
+     ],
+     "const": "USB_1"
+    },
+    {
+     "n": 37,
+     "name": "SIM Card Adapter",
+     "role": "",
+     "gpio": null,
+     "to": [
+      "16 GB card, Raspberry Pi OS Lite 32-bit bookworm · SD contacts"
+     ],
+     "const": "SIM_CARD_ADAPTER"
+    }
+   ],
+   "modules": [
+    "alsa-utils (aplay)",
+    "Config",
+    "dhc-door adapter (index.js)",
+    "espeak-ng",
+    "ffmpeg",
+    "gpiod (gpiomon)",
+    "mqtt (npm)",
+    "Node.js",
+    "Raspberry Pi OS Lite 32-bit (Debian 12 bookworm)"
+   ]
+  },
+  {
+   "block": "b-uhxylmim",
+   "name": "Spare Android phone, Samsung Galaxy A50",
+   "class": "SpareAndroidPhoneSamsungGalaxyA50",
+   "pins": [
+    {
+     "n": 1,
+     "name": "USB",
+     "role": "data",
+     "gpio": null,
+     "to": [
+      "Raspberry Pi 1 Model B · USB 1"
+     ],
+     "const": "USB"
+    },
+    {
+     "n": 2,
+     "name": "Wi-Fi",
+     "role": "data",
+     "gpio": null,
+     "to": [
+      "Home Wifi · Wi-Fi"
+     ],
+     "const": "WI_FI"
+    }
+   ],
+   "modules": [
+    "Chrome (Android 11)",
+    "Settings: Stay awake while charging, lock type swipe or none on a dedicated phone"
+   ]
+  }
+ ]
+}

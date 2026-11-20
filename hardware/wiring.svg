@@ -1,54 +1,111 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 -40 930 821" width="930" height="821" font-family="sans-serif" font-size="11">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-270 -60 1280 1155" width="1280" height="1155" font-family="sans-serif" font-size="11">
 <title>Door bell: wiring</title>
-<rect x="-10" y="-40" width="930" height="821" fill="#fff"/>
-<g transform="translate(50,20)"><rect width="190" height="78" rx="6" fill="#f6f7f9" stroke="#556" stroke-dasharray="6 4"/><rect width="190" height="28" rx="6" fill="#dde3ea" stroke="#556"/><text x="10" y="18" font-weight="bold">12 V → 5 V 3 A step-down</text>
+<rect x="-270" y="-60" width="1280" height="1155" fill="#fff"/>
+<path d="M20,534.5 L120,534.5 L120,535.5 L150,535.5" fill="none" stroke="yellow" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-20,81.5 L5,81.5 A5,5 0 0 1 15,81.5 L300,81.5" fill="none" stroke="black" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M890,61.5 L920,61.5 L920,534.5 L740,534.5" fill="none" stroke="black" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M500,221.5 L530,221.5 L530,331.5 L410,331.5" fill="none" stroke="red" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M310,204.5 L25,204.5 A5,5 0 0 0 15,204.5 L10,204.5 L10,64.5 L-20,64.5" fill="none" stroke="red" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M80,984.5 L690,984.5" fill="none" stroke="yellow" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M280,627 L280,684.5 L310,684.5" fill="none" stroke="yellow" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M500,204.5 L540,204.5 L540,314.5 L535,314.5 A5,5 0 0 0 525,314.5 L410,314.5" fill="none" stroke="black" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M950,984.5 L980,984.5 L980,784.5 L410,784.5" fill="none" stroke="yellow" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M410,535.5 L450,535.5 L450,534.5 L480,534.5" fill="none" stroke="yellow" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M310,221.5 L20,221.5 L20,81.5 L15,81.5 A5,5 0 0 0 5,81.5 L-20,81.5" fill="none" stroke="black" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-20,64.5 L300,64.5" fill="none" stroke="red" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-180,984.5 L-210,984.5 L-210,534.5 L-170,534.5" fill="none" stroke="yellow" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M700,61.5 L630,61.5 L630,64.5 L560,64.5" fill="none" stroke="yellow" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M150,552.5 L120,552.5 L120,784.5 L150,784.5" fill="none" stroke="yellow" stroke-width="2.5" stroke-linejoin="round"/>
+<g transform="translate(310,160)"><rect width="190" height="78" rx="6" fill="#f6f7f9" stroke="#556" stroke-dasharray="6 4"/><rect width="190" height="28" rx="6" fill="#dde3ea" stroke="#556"/><text x="10" y="18" font-weight="bold">12 V → 5 V 3 A step-down</text>
 <circle cx="0" cy="44.5" r="4" fill="red"/><text x="9" y="48.5" text-anchor="start">IN+</text>
 <circle cx="0" cy="61.5" r="4" fill="black"/><text x="9" y="65.5" text-anchor="start">IN-</text>
 <circle cx="190" cy="44.5" r="4" fill="red"/><text x="181" y="48.5" text-anchor="end">OUT+</text>
 <circle cx="190" cy="61.5" r="4" fill="black"/><text x="181" y="65.5" text-anchor="end">OUT-</text>
 </g>
-<g transform="translate(470,660)"><rect width="190" height="61" rx="6" fill="#f6f7f9" stroke="#556" stroke-dasharray="6 4"/><rect width="190" height="28" rx="6" fill="#dde3ea" stroke="#556"/><text x="10" y="18" font-weight="bold">Ethernet cable to the door, or a Linux-f</text>
+<g transform="translate(310,640)"><rect width="260" height="95" rx="6" fill="#f6f7f9" stroke="#556"/><rect width="260" height="28" rx="6" fill="#dde3ea" stroke="#556"/><text x="10" y="18" font-weight="bold">16 GB card, Raspberry Pi OS Lite 32-bit </text>
+<circle cx="0" cy="44.5" r="4" fill="green"/><text x="9" y="48.5" text-anchor="start">SD contacts</text>
+</g>
+<g transform="translate(700,0)"><rect width="190" height="95" rx="6" fill="#f6f7f9" stroke="#556" stroke-dasharray="6 4"/><rect width="190" height="28" rx="6" fill="#dde3ea" stroke="#556"/><text x="10" y="18" font-weight="bold">4-in-1 converter AHD/TVI/CVI/CVBS → HDMI</text>
+<circle cx="0" cy="44.5" r="4" fill="black"/><text x="9" y="48.5" text-anchor="start">GND</text>
+<circle cx="0" cy="61.5" r="4" fill="orange"/><text x="9" y="65.5" text-anchor="start">Video in</text>
+<circle cx="0" cy="78.5" r="4" fill="red"/><text x="9" y="82.5" text-anchor="start">5V</text>
+<circle cx="190" cy="44.5" r="4" fill="black"/><text x="181" y="48.5" text-anchor="end">GND</text>
+<circle cx="190" cy="61.5" r="4" fill="orange"/><text x="181" y="65.5" text-anchor="end">HDMI out</text>
+</g>
+<g transform="translate(600,180)"><rect width="190" height="112" rx="6" fill="#f6f7f9" stroke="#556"/><rect width="190" height="28" rx="6" fill="#dde3ea" stroke="#556"/><text x="10" y="18" font-weight="bold">4-wire intercom cable, AWG24, up to 15 m</text>
+<circle cx="0" cy="44.5" r="4" fill="red"/><text x="9" y="48.5" text-anchor="start">A red</text>
+<circle cx="0" cy="61.5" r="4" fill="purple"/><text x="9" y="65.5" text-anchor="start">A white</text>
+<circle cx="0" cy="78.5" r="4" fill="black"/><text x="9" y="82.5" text-anchor="start">A black</text>
+<circle cx="0" cy="95.5" r="4" fill="orange"/><text x="9" y="99.5" text-anchor="start">A yellow</text>
+<circle cx="190" cy="44.5" r="4" fill="red"/><text x="181" y="48.5" text-anchor="end">B red</text>
+<circle cx="190" cy="61.5" r="4" fill="purple"/><text x="181" y="65.5" text-anchor="end">B white</text>
+<circle cx="190" cy="78.5" r="4" fill="black"/><text x="181" y="82.5" text-anchor="end">B black</text>
+<circle cx="190" cy="95.5" r="4" fill="orange"/><text x="181" y="99.5" text-anchor="end">B yellow</text>
+</g>
+<g transform="translate(-210,20)"><rect width="190" height="95" rx="6" fill="#f6f7f9" stroke="#556"/><rect width="190" height="28" rx="6" fill="#dde3ea" stroke="#556"/><text x="10" y="18" font-weight="bold">DIN-rail supply TMEZON Modulo DR-60-12</text>
+<circle cx="0" cy="44.5" r="4" fill="red"/><text x="9" y="48.5" text-anchor="start">L</text>
+<circle cx="0" cy="61.5" r="4" fill="red"/><text x="9" y="65.5" text-anchor="start">N</text>
+<circle cx="0" cy="78.5" r="4" fill="black"/><text x="9" y="82.5" text-anchor="start">PE</text>
+<circle cx="190" cy="44.5" r="4" fill="red"/><text x="181" y="48.5" text-anchor="end">V+</text>
+<circle cx="190" cy="61.5" r="4" fill="black"/><text x="181" y="65.5" text-anchor="end">V-</text>
+</g>
+<g transform="translate(-170,490)"><rect width="190" height="61" rx="6" fill="#f6f7f9" stroke="#556" stroke-dasharray="6 4"/><rect width="190" height="28" rx="6" fill="#dde3ea" stroke="#556"/><text x="10" y="18" font-weight="bold">Ethernet cable to the door, or a Linux-f</text>
 <circle cx="0" cy="44.5" r="4" fill="green"/><text x="9" y="48.5" text-anchor="start">End A</text>
 <circle cx="190" cy="44.5" r="4" fill="green"/><text x="181" y="48.5" text-anchor="end">End B</text>
 </g>
-<g transform="translate(150,160)"><rect width="190" height="61" rx="6" fill="#f6f7f9" stroke="#556"/><rect width="190" height="28" rx="6" fill="#dde3ea" stroke="#556"/><text x="10" y="18" font-weight="bold">Monitor MZ-IP-V142B</text>
-<circle cx="0" cy="44.5" r="4" fill="blue"/><text x="9" y="48.5" text-anchor="start">1</text>
-<circle cx="190" cy="44.5" r="4" fill="blue"/><text x="181" y="48.5" text-anchor="end">2</text>
+<g transform="translate(-180,940)"><rect width="260" height="95" rx="6" fill="#f6f7f9" stroke="#556"/><rect width="260" height="28" rx="6" fill="#dde3ea" stroke="#556"/><text x="10" y="18" font-weight="bold">Home LAN</text>
+<circle cx="0" cy="44.5" r="4" fill="green"/><text x="9" y="48.5" text-anchor="start">Port 1</text>
+<circle cx="260" cy="44.5" r="4" fill="green"/><text x="251" y="48.5" text-anchor="end">Port 2</text>
 </g>
-<g transform="translate(130,280)"><rect width="300" height="265" rx="6" fill="#f6f7f9" stroke="#556"/><rect width="300" height="28" rx="6" fill="#dde3ea" stroke="#556"/><text x="10" y="18" font-weight="bold">Raspberry Pi 1 Model B</text>
+<g transform="translate(690,940)"><rect width="260" height="95" rx="6" fill="#f6f7f9" stroke="#556"/><rect width="260" height="28" rx="6" fill="#dde3ea" stroke="#556"/><text x="10" y="18" font-weight="bold">Home Wifi</text>
+<circle cx="0" cy="44.5" r="4" fill="green"/><text x="9" y="48.5" text-anchor="start">LAN uplink</text>
+<circle cx="260" cy="44.5" r="4" fill="green"/><text x="251" y="48.5" text-anchor="end">Wi-Fi</text>
+</g>
+<g transform="translate(300,20)"><rect width="260" height="95" rx="6" fill="#f6f7f9" stroke="#556"/><rect width="260" height="28" rx="6" fill="#dde3ea" stroke="#556"/><text x="10" y="18" font-weight="bold">Outdoor door station</text>
+<circle cx="0" cy="44.5" r="4" fill="red"/><text x="9" y="48.5" text-anchor="start">Red VCC</text>
+<circle cx="0" cy="61.5" r="4" fill="black"/><text x="9" y="65.5" text-anchor="start">Black GND</text>
+<circle cx="260" cy="44.5" r="4" fill="purple"/><text x="251" y="48.5" text-anchor="end">White audio + </text>
+<circle cx="260" cy="61.5" r="4" fill="orange"/><text x="251" y="65.5" text-anchor="end">Yellow video</text>
+</g>
+<g transform="translate(150,270)"><rect width="260" height="357" rx="6" fill="#f6f7f9" stroke="#556"/><rect width="260" height="28" rx="6" fill="#dde3ea" stroke="#556"/><text x="10" y="18" font-weight="bold">Raspberry Pi 1 Model B</text>
 <circle cx="0" cy="44.5" r="4" fill="red"/><text x="9" y="48.5" text-anchor="start">3V3</text>
-<circle cx="300" cy="44.5" r="4" fill="red"/><text x="291" y="48.5" text-anchor="end">5V</text>
+<circle cx="260" cy="44.5" r="4" fill="red"/><text x="251" y="48.5" text-anchor="end">5V</text>
 <circle cx="0" cy="61.5" r="4" fill="blue"/><text x="9" y="65.5" text-anchor="start">GPIO 2</text>
 <circle cx="0" cy="78.5" r="4" fill="blue"/><text x="9" y="82.5" text-anchor="start">GPIO 3</text>
-<circle cx="300" cy="61.5" r="4" fill="black"/><text x="291" y="65.5" text-anchor="end">GND</text>
+<circle cx="260" cy="61.5" r="4" fill="black"/><text x="251" y="65.5" text-anchor="end">GND</text>
 <circle cx="0" cy="95.5" r="4" fill="blue"/><text x="9" y="99.5" text-anchor="start">GPIO 23</text>
-<circle cx="300" cy="78.5" r="4" fill="blue"/><text x="291" y="82.5" text-anchor="end">GPIO 14</text>
-<circle cx="300" cy="95.5" r="4" fill="blue"/><text x="291" y="99.5" text-anchor="end">GPIO 15</text>
+<circle cx="260" cy="78.5" r="4" fill="blue"/><text x="251" y="82.5" text-anchor="end">GPIO 14</text>
+<circle cx="260" cy="95.5" r="4" fill="blue"/><text x="251" y="99.5" text-anchor="end">GPIO 15</text>
 <circle cx="0" cy="112.5" r="4" fill="blue"/><text x="9" y="116.5" text-anchor="start">GPIO 17</text>
-<circle cx="300" cy="112.5" r="4" fill="blue"/><text x="291" y="116.5" text-anchor="end">GPIO 18</text>
+<circle cx="260" cy="112.5" r="4" fill="blue"/><text x="251" y="116.5" text-anchor="end">GPIO 18</text>
 <circle cx="0" cy="129.5" r="4" fill="blue"/><text x="9" y="133.5" text-anchor="start">GPIO 27</text>
 <circle cx="0" cy="146.5" r="4" fill="blue"/><text x="9" y="150.5" text-anchor="start">GPIO 22</text>
-<circle cx="300" cy="129.5" r="4" fill="blue"/><text x="291" y="133.5" text-anchor="end">GPIO 4</text>
-<circle cx="300" cy="146.5" r="4" fill="blue"/><text x="291" y="150.5" text-anchor="end">GPIO 24</text>
+<circle cx="260" cy="129.5" r="4" fill="blue"/><text x="251" y="133.5" text-anchor="end">GPIO 4</text>
+<circle cx="260" cy="146.5" r="4" fill="blue"/><text x="251" y="150.5" text-anchor="end">GPIO 24</text>
 <circle cx="0" cy="163.5" r="4" fill="blue"/><text x="9" y="167.5" text-anchor="start">GPIO 10</text>
 <circle cx="0" cy="180.5" r="4" fill="blue"/><text x="9" y="184.5" text-anchor="start">GPIO 9</text>
-<circle cx="300" cy="163.5" r="4" fill="blue"/><text x="291" y="167.5" text-anchor="end">GPIO 25</text>
+<circle cx="260" cy="163.5" r="4" fill="blue"/><text x="251" y="167.5" text-anchor="end">GPIO 25</text>
 <circle cx="0" cy="197.5" r="4" fill="blue"/><text x="9" y="201.5" text-anchor="start">GPIO 11</text>
-<circle cx="300" cy="180.5" r="4" fill="blue"/><text x="291" y="184.5" text-anchor="end">GPIO 8</text>
-<circle cx="300" cy="197.5" r="4" fill="blue"/><text x="291" y="201.5" text-anchor="end">GPIO 7</text>
+<circle cx="260" cy="180.5" r="4" fill="blue"/><text x="251" y="184.5" text-anchor="end">GPIO 8</text>
+<circle cx="260" cy="197.5" r="4" fill="blue"/><text x="251" y="201.5" text-anchor="end">GPIO 7</text>
 <circle cx="0" cy="214.5" r="4" fill="black"/><text x="9" y="218.5" text-anchor="start">GND</text>
-<circle cx="300" cy="214.5" r="4" fill="red"/><text x="291" y="218.5" text-anchor="end">5V</text>
+<circle cx="260" cy="214.5" r="4" fill="red"/><text x="251" y="218.5" text-anchor="end">5V</text>
 <circle cx="0" cy="231.5" r="4" fill="black"/><text x="9" y="235.5" text-anchor="start">GND</text>
-<circle cx="300" cy="231.5" r="4" fill="black"/><text x="291" y="235.5" text-anchor="end">GND</text>
+<circle cx="260" cy="231.5" r="4" fill="black"/><text x="251" y="235.5" text-anchor="end">GND</text>
 <circle cx="0" cy="248.5" r="4" fill="red"/><text x="9" y="252.5" text-anchor="start">3V3</text>
-<circle cx="300" cy="248.5" r="4" fill="black"/><text x="291" y="252.5" text-anchor="end">GND</text>
+<circle cx="260" cy="248.5" r="4" fill="black"/><text x="251" y="252.5" text-anchor="end">GND</text>
+<circle cx="0" cy="265.5" r="4" fill="#888"/><text x="9" y="269.5" text-anchor="start">LAN</text>
+<circle cx="260" cy="265.5" r="4" fill="#888"/><text x="251" y="269.5" text-anchor="end">HTMI</text>
+<circle cx="0" cy="282.5" r="4" fill="#888"/><text x="9" y="286.5" text-anchor="start">USB 1</text>
+<circle cx="260" cy="282.5" r="4" fill="#888"/><text x="251" y="286.5" text-anchor="end">USB 2</text>
+<circle cx="130" cy="357" r="4" fill="#888"/><text x="134" y="348" transform="rotate(-90 134 348)">SIM Card </text>
 </g>
-<g transform="translate(670,210)"><rect width="190" height="61" rx="6" fill="#f6f7f9" stroke="#556"/><rect width="190" height="28" rx="6" fill="#dde3ea" stroke="#556"/><text x="10" y="18" font-weight="bold">The lock</text>
-<circle cx="0" cy="44.5" r="4" fill="blue"/><text x="9" y="48.5" text-anchor="start">1</text>
-<circle cx="190" cy="44.5" r="4" fill="blue"/><text x="181" y="48.5" text-anchor="end">2</text>
-</g>
-<g transform="translate(550,360)"><rect width="190" height="61" rx="6" fill="#f6f7f9" stroke="#556" stroke-dasharray="6 4"/><rect width="190" height="28" rx="6" fill="#dde3ea" stroke="#556"/><text x="10" y="18" font-weight="bold">USB HDMI grabber</text>
+<g transform="translate(150,740)"><rect width="260" height="95" rx="6" fill="#f6f7f9" stroke="#556"/><rect width="260" height="28" rx="6" fill="#dde3ea" stroke="#556"/><text x="10" y="18" font-weight="bold">Spare Android phone, Samsung Galaxy A50</text>
 <circle cx="0" cy="44.5" r="4" fill="green"/><text x="9" y="48.5" text-anchor="start">USB</text>
-<circle cx="190" cy="44.5" r="4" fill="orange"/><text x="181" y="48.5" text-anchor="end">HDMI / video i</text>
+<circle cx="260" cy="44.5" r="4" fill="green"/><text x="251" y="48.5" text-anchor="end">Wi-Fi</text>
+</g>
+<g transform="translate(480,490)"><rect width="260" height="95" rx="6" fill="#f6f7f9" stroke="#556" stroke-dasharray="6 4"/><rect width="260" height="28" rx="6" fill="#dde3ea" stroke="#556"/><text x="10" y="18" font-weight="bold">USB HDMI grabber</text>
+<circle cx="0" cy="44.5" r="4" fill="green"/><text x="9" y="48.5" text-anchor="start">USB</text>
+<circle cx="260" cy="44.5" r="4" fill="orange"/><text x="251" y="48.5" text-anchor="end">HDMI / video i</text>
 </g>
 </svg>

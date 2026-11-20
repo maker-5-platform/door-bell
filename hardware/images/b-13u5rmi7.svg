@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 140">
+<title>Home LAN (dummy network switch)</title>
+<rect x="20" y="30" width="200" height="80" rx="8" fill="#e9edf2" stroke="#3a3f46" stroke-width="2"/>
+<text x="120" y="52" font-size="10" text-anchor="middle" fill="#3a3f46">Home LAN</text>
+<circle cx="40" cy="48" r="3" fill="#2fbf4a"/>
+<rect data-pin="1" x="60" y="66" width="34" height="28" rx="2" fill="#2b2f35" stroke="#3a3f46" stroke-width="1.5"/>
+<rect x="70" y="88" width="14" height="6" fill="#e9edf2"/>
+<rect data-pin="2" x="146" y="66" width="34" height="28" rx="2" fill="#2b2f35" stroke="#3a3f46" stroke-width="1.5"/>
+<rect x="156" y="88" width="14" height="6" fill="#e9edf2"/>
+<text x="77" y="104" font-size="7" text-anchor="middle" fill="#3a3f46">Port 1</text>
+<text x="163" y="104" font-size="7" text-anchor="middle" fill="#3a3f46">Port 2</text>
+</svg>

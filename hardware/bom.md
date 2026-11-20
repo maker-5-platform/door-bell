@@ -14,6 +14,8 @@ they cost is not part of the design. Written by the Maker-5 edge.
 | Coupling capacitor + LM386 amplifier board | electronic | 1 | yes |
 | DIN-rail supply TMEZON Modulo DR-60-12 | electronic | 1 |  |
 | Ethernet cable to the door, or a Linux-friendly USB Wi-Fi stick | electronic | 1 | yes |
+| Home LAN | electronic | 1 |  |
+| Home Wifi | electronic | 1 |  |
 | Logic-level MOSFET or small relay on GPIO 27 | electronic | 1 | yes |
 | Monitor MZ-IP-V142B | electronic | 1 |  |
 | Optocoupler PC817 + resistors | electronic | 1 | yes |

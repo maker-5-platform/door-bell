@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 320">
+<title>Outdoor door station (generic, 4-wire)</title>
+<rect x="40" y="10" width="120" height="270" rx="10" fill="#8a9099" stroke="#4a4f56" stroke-width="2"/>
+<rect x="55" y="25" width="90" height="60" rx="6" fill="#2b2f35"/>
+<circle cx="100" cy="55" r="18" fill="#101215" stroke="#5a6270" stroke-width="2"/>
+<circle cx="100" cy="55" r="8" fill="#1e3a5f"/>
+<text x="100" y="95" font-size="7" text-anchor="middle" fill="#ffffff">camera</text>
+<g fill="#4a4f56">
+<circle cx="85" cy="120" r="2.5"/><circle cx="95" cy="120" r="2.5"/><circle cx="105" cy="120" r="2.5"/><circle cx="115" cy="120" r="2.5"/>
+<circle cx="85" cy="130" r="2.5"/><circle cx="95" cy="130" r="2.5"/><circle cx="105" cy="130" r="2.5"/><circle cx="115" cy="130" r="2.5"/>
+<circle cx="85" cy="140" r="2.5"/><circle cx="95" cy="140" r="2.5"/><circle cx="105" cy="140" r="2.5"/><circle cx="115" cy="140" r="2.5"/>
+</g>
+<text x="100" y="155" font-size="7" text-anchor="middle" fill="#ffffff">speaker</text>
+<rect x="70" y="175" width="60" height="40" rx="6" fill="#c8ccd2" stroke="#4a4f56" stroke-width="1.5"/>
+<circle cx="100" cy="195" r="10" fill="#e8b84a" stroke="#4a4f56" stroke-width="1"/>
+<text x="100" y="228" font-size="7" text-anchor="middle" fill="#ffffff">call button</text>
+<rect x="40" y="285" width="120" height="25" rx="3" fill="#2b2f35"/>
+<circle data-pin="1" cx="58" cy="297" r="6" fill="#d22b2b" stroke="#ffffff" stroke-width="1"/>
+<circle data-pin="2" cx="86" cy="297" r="6" fill="#f2f2f2" stroke="#808080" stroke-width="1"/>
+<circle data-pin="3" cx="114" cy="297" r="6" fill="#111111" stroke="#ffffff" stroke-width="1"/>
+<circle data-pin="4" cx="142" cy="297" r="6" fill="#e6c619" stroke="#ffffff" stroke-width="1"/>
+<text x="58" y="318" font-size="6" text-anchor="middle" fill="#808080">VCC</text>
+<text x="86" y="318" font-size="6" text-anchor="middle" fill="#808080">AUD</text>
+<text x="114" y="318" font-size="6" text-anchor="middle" fill="#808080">GND</text>
+<text x="142" y="318" font-size="6" text-anchor="middle" fill="#808080">VID</text>
+</svg>
