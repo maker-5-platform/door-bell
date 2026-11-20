@@ -1,0 +1,6 @@
+This repository's design was made with Maker-5.
+
+Parts and their pinouts come from the Fritzing parts library,
+https://github.com/fritzing/fritzing-parts, licensed CC BY-SA 3.0:
+
+- Raspberry Pi A (core/Raspberry_Pi_A.fzp), by Fabian Althaus

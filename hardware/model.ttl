@@ -1,0 +1,474 @@
+@prefix m5: <https://maker-5.cloud/ontology#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://maker-5.cloud/id/block/b-0viuovdj> a m5:Block ;
+    m5:blockType m5:Electronic ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:supplyState m5:SupplyThere ;
+    schema:description "Notes: about 1.3 Ω per wire; fine for composite video at this length" ;
+    schema:name "4-wire intercom cable, AWG24, up to 15 m" .
+
+<https://maker-5.cloud/id/block/b-1lez7rdl> a m5:Block ;
+    m5:blockType m5:Electronic ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:supplyState m5:SupplyToBuy ;
+    schema:description "optional; Purpose: switches the camera off between rings; Notes: only if the button still rings with the camera off" ;
+    schema:name "Logic-level MOSFET or small relay on GPIO 27" .
+
+<https://maker-5.cloud/id/block/b-3g75pdq2> a m5:Block ;
+    m5:blockType m5:Electronic ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:supplyState m5:SupplyToBuy ;
+    schema:description "optional; Purpose: if a phone gets connected to the Pi; Notes: the Pi 1 can't charge a phone" ;
+    schema:name "Powered USB hub" .
+
+<https://maker-5.cloud/id/block/b-3xq7q4t2> a m5:Block ;
+    m5:blockType m5:Electronic ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:supplyState m5:SupplyToBuy ;
+    schema:description "Purpose: camera signal of unknown type; Notes: not needed if the TV test shows plain composite (CVBS)" ;
+    schema:name "4-in-1 converter AHD/TVI/CVI/CVBS → HDMI" .
+
+<https://maker-5.cloud/id/block/b-6c25er1o> a m5:Block ;
+    m5:blockType m5:Electronic ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:supplyState m5:SupplyToBuy ;
+    schema:description "Purpose: audio out (and in, if the call turns out to be a tone); Notes: the Pi 1's 3.5 mm jack is weak" ;
+    schema:name "USB sound card" .
+
+<https://maker-5.cloud/id/block/b-6rg1nvxc> a m5:Block ;
+    m5:blockType m5:Electronic ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:supplyState m5:SupplyThere ;
+    schema:description "Notes: 12 V, 60 W; powers the station, the Pi and the amplifier" ;
+    schema:name "DIN-rail supply TMEZON Modulo DR-60-12" .
+
+<https://maker-5.cloud/id/block/b-bx2jtqx3> a m5:Block ;
+    m5:blockType m5:Mechanical ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:supplyState m5:SupplyToBuy ;
+    schema:description "Purpose: the adapter board at the cable" ;
+    schema:name "Small perfboard, terminal blocks, enclosure" .
+
+<https://maker-5.cloud/id/block/b-lq3es295> a m5:Block ;
+    m5:blockType m5:Electronic ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:supplyState m5:SupplyInHand ;
+    schema:description "Status: flashed and running" ;
+    schema:name "16 GB card, Raspberry Pi OS Lite 32-bit bookworm" .
+
+<https://maker-5.cloud/id/block/b-r8zhbd8m> a m5:Block ;
+    m5:blockType m5:Electronic ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:supplyState m5:SupplyThere ;
+    schema:description "Notes: 4 wires: red VCC, white audio + call, black GND, yellow video" ;
+    schema:name "Outdoor door station" .
+
+<https://maker-5.cloud/id/block/b-ruhmzha6> a m5:Block ;
+    m5:blockType m5:Electronic ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:supplyState m5:SupplyToBuy ;
+    schema:description "or a comparator; Purpose: detects the call on the white wire, into GPIO 17 (active low); Notes: depends on measurement 3" ;
+    schema:name "Optocoupler PC817 + resistors" .
+
+<https://maker-5.cloud/id/block/b-v7lbwrnh> a m5:Block ;
+    m5:blockType m5:Electronic ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:supplyState m5:SupplyToBuy ;
+    schema:description "about 10 µF; Purpose: the spoken answer to the station's speaker; Notes: low voltage only" ;
+    schema:name "Coupling capacitor + LM386 amplifier board" .
+
+<https://maker-5.cloud/id/module/m-06yxdq8y> a m5:SoftwareModule ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:runsOn <https://maker-5.cloud/id/block/b-uhxylmim> ;
+    schema:description "Role: keeps the door screen on" ;
+    schema:name "Settings: Stay awake while charging, lock type swipe or none on a dedicated phone" .
+
+<https://maker-5.cloud/id/module/m-497fwdzl> a m5:SoftwareModule ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    schema:description "Role: makes the codes; Ring test; Bell only" ;
+    schema:name "Edge web app, Codes and Door bell pages" .
+
+<https://maker-5.cloud/id/module/m-4qwqarab> a m5:SoftwareModule ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:runsOn <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    schema:description "Role: MQTT over WebSocket to the edge" ;
+    schema:name "mqtt (npm)" ;
+    schema:softwareVersion "5.16.1" .
+
+<https://maker-5.cloud/id/module/m-ceg5ubq6> a m5:SoftwareModule ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    schema:description "Role: rings phones, keeps the bell state, relays pictures, Look, the house's lights and chime" ;
+    schema:name "Node-RED with the dhc-panel palette (engine, broker rules)" .
+
+<https://maker-5.cloud/id/module/m-ct8wfgfs> a m5:SoftwareModule ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:runsOn <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    schema:description "Role: the operating system" ;
+    schema:name "Raspberry Pi OS Lite 32-bit (Debian 12 bookworm)" ;
+    schema:softwareVersion "kernel 6.12.109 (rpi-v6)" .
+
+<https://maker-5.cloud/id/module/m-e5pw9kbd> a m5:SoftwareModule ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:runsOn <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    schema:description "Role: the door code link; videocmd currently set to the test picture" ;
+    schema:name "Config" ;
+    schema:softwareVersion "/etc/dhc-door/config.json" .
+
+<https://maker-5.cloud/id/module/m-gf9ljp57> a m5:SoftwareModule ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    schema:description "Role: the door screen in the phone's browser; no app to install" ;
+    schema:name "Phone page /app/panel/ (panel.js, tinymqtt.js)" .
+
+<https://maker-5.cloud/id/module/m-ic0v284o> a m5:SoftwareModule ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:runsOn <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    schema:description "Role: camera → JPEG pictures (currently a test pattern)" ;
+    schema:name "ffmpeg" ;
+    schema:softwareVersion "5.1.9" .
+
+<https://maker-5.cloud/id/module/m-ilpu7kls> a m5:SoftwareModule ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:runsOn <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    schema:description "Role: plays the answer clips" ;
+    schema:name "alsa-utils (aplay)" ;
+    schema:softwareVersion "1.2.8" .
+
+<https://maker-5.cloud/id/module/m-j5l420u1> a m5:SoftwareModule ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:runsOn <https://maker-5.cloud/id/block/b-uhxylmim> ;
+    schema:description "Role: opens the code's link; no app" ;
+    schema:name "Chrome (Android 11)" .
+
+<https://maker-5.cloud/id/module/m-u3gylr6m> a m5:SoftwareModule ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    schema:description "Role: lights blink and the chime sounds on a ring" ;
+    schema:name "Hue bridge / Homematic CCU (optional)" .
+
+<https://maker-5.cloud/id/module/m-vnexxufn> a m5:SoftwareModule ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    schema:description "Role: MQTT broker; WebSocket on 9001, message limit 160 kB" ;
+    schema:name "Mosquitto with Dynamic Security" .
+
+<https://maker-5.cloud/id/module/m-w1ttwua5> a m5:SoftwareModule ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:runsOn <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    schema:description "Role: ring, pictures, voice; systemd unit dhc-door.service" ;
+    schema:name "dhc-door adapter (index.js)" ;
+    schema:softwareVersion "devops edge stage" .
+
+<https://maker-5.cloud/id/module/m-z6togb5v> a m5:SoftwareModule ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:runsOn <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    schema:description "Role: watches the button on GPIO 17" ;
+    schema:name "gpiod (gpiomon)" ;
+    schema:softwareVersion "1.6.3" .
+
+<https://maker-5.cloud/id/module/m-zdlq55jn> a m5:SoftwareModule ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:runsOn <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    schema:description "Role: runs the adapter" ;
+    schema:name "Node.js" ;
+    schema:softwareVersion "18.20.4" .
+
+<https://maker-5.cloud/id/module/m-zqxn24pm> a m5:SoftwareModule ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:runsOn <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    schema:description "Role: speaks the clips in make-clips.sh; piper optional for nicer voices" ;
+    schema:name "espeak-ng" ;
+    schema:softwareVersion "1.51" .
+
+<https://maker-5.cloud/id/pin/b-0gd62dxi.1> a m5:Pin ;
+    m5:pinNumber 1 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-0gd62dxi> ;
+    m5:pinRole m5:PinSignal ;
+    schema:name "1" .
+
+<https://maker-5.cloud/id/pin/b-0gd62dxi.2> a m5:Pin ;
+    m5:pinNumber 2 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-0gd62dxi> ;
+    m5:pinRole m5:PinSignal ;
+    schema:name "2" .
+
+<https://maker-5.cloud/id/pin/b-4ct2fqmm.1> a m5:Pin ;
+    m5:pinNumber 1 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-4ct2fqmm> ;
+    m5:pinRole m5:PinData ;
+    schema:name "End A" .
+
+<https://maker-5.cloud/id/pin/b-4ct2fqmm.2> a m5:Pin ;
+    m5:pinNumber 2 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-4ct2fqmm> ;
+    m5:pinRole m5:PinData ;
+    schema:name "End B" .
+
+<https://maker-5.cloud/id/pin/b-6911mlng.1> a m5:Pin ;
+    m5:pinNumber 1 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6911mlng> ;
+    m5:pinRole m5:PinPower ;
+    schema:name "IN+" .
+
+<https://maker-5.cloud/id/pin/b-6911mlng.2> a m5:Pin ;
+    m5:pinNumber 2 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6911mlng> ;
+    m5:pinRole m5:PinGround ;
+    schema:name "IN-" .
+
+<https://maker-5.cloud/id/pin/b-6911mlng.3> a m5:Pin ;
+    m5:pinNumber 3 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6911mlng> ;
+    m5:pinRole m5:PinPower ;
+    schema:name "OUT+" .
+
+<https://maker-5.cloud/id/pin/b-6911mlng.4> a m5:Pin ;
+    m5:pinNumber 4 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6911mlng> ;
+    m5:pinRole m5:PinGround ;
+    schema:name "OUT-" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.1> a m5:Pin ;
+    m5:pinNumber 1 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinPower ;
+    schema:name "3V3" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.10> a m5:Pin ;
+    m5:pinNumber 10 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinSignal ;
+    schema:name "GPIO 15" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.11> a m5:Pin ;
+    m5:pinNumber 11 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinSignal ;
+    schema:name "GPIO 17" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.12> a m5:Pin ;
+    m5:pinNumber 12 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinSignal ;
+    schema:name "GPIO 18" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.13> a m5:Pin ;
+    m5:pinNumber 13 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinSignal ;
+    schema:name "GPIO 27" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.15> a m5:Pin ;
+    m5:pinNumber 15 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinSignal ;
+    schema:name "GPIO 22" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.16> a m5:Pin ;
+    m5:pinNumber 16 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinSignal ;
+    schema:name "GPIO 4" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.18> a m5:Pin ;
+    m5:pinNumber 18 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinSignal ;
+    schema:name "GPIO 24" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.19> a m5:Pin ;
+    m5:pinNumber 19 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinSignal ;
+    schema:name "GPIO 10" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.2> a m5:Pin ;
+    m5:pinNumber 2 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinPower ;
+    schema:name "5V" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.21> a m5:Pin ;
+    m5:pinNumber 21 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinSignal ;
+    schema:name "GPIO 9" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.22> a m5:Pin ;
+    m5:pinNumber 22 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinSignal ;
+    schema:name "GPIO 25" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.23> a m5:Pin ;
+    m5:pinNumber 23 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinSignal ;
+    schema:name "GPIO 11" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.24> a m5:Pin ;
+    m5:pinNumber 24 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinSignal ;
+    schema:name "GPIO 8" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.26> a m5:Pin ;
+    m5:pinNumber 26 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinSignal ;
+    schema:name "GPIO 7" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.27> a m5:Pin ;
+    m5:pinNumber 27 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinGround ;
+    schema:name "GND" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.28> a m5:Pin ;
+    m5:pinNumber 28 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinPower ;
+    schema:name "5V" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.29> a m5:Pin ;
+    m5:pinNumber 29 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinGround ;
+    schema:name "GND" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.3> a m5:Pin ;
+    m5:pinNumber 3 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinSignal ;
+    schema:name "GPIO 2" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.30> a m5:Pin ;
+    m5:pinNumber 30 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinGround ;
+    schema:name "GND" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.31> a m5:Pin ;
+    m5:pinNumber 31 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinPower ;
+    schema:name "3V3" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.32> a m5:Pin ;
+    m5:pinNumber 32 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinGround ;
+    schema:name "GND" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.5> a m5:Pin ;
+    m5:pinNumber 5 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinSignal ;
+    schema:name "GPIO 3" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.6> a m5:Pin ;
+    m5:pinNumber 6 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinGround ;
+    schema:name "GND" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.7> a m5:Pin ;
+    m5:pinNumber 7 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinSignal ;
+    schema:name "GPIO 23" .
+
+<https://maker-5.cloud/id/pin/b-6kswk8a0.8> a m5:Pin ;
+    m5:pinNumber 8 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-6kswk8a0> ;
+    m5:pinRole m5:PinSignal ;
+    schema:name "GPIO 14" .
+
+<https://maker-5.cloud/id/pin/b-7lm6nrqs.1> a m5:Pin ;
+    m5:pinNumber 1 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-7lm6nrqs> ;
+    m5:pinRole m5:PinSignal ;
+    schema:name "1" .
+
+<https://maker-5.cloud/id/pin/b-7lm6nrqs.2> a m5:Pin ;
+    m5:pinNumber 2 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-7lm6nrqs> ;
+    m5:pinRole m5:PinSignal ;
+    schema:name "2" .
+
+<https://maker-5.cloud/id/pin/b-l2m0ix9f.1> a m5:Pin ;
+    m5:pinNumber 1 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-l2m0ix9f> ;
+    m5:pinRole m5:PinData ;
+    schema:name "USB" .
+
+<https://maker-5.cloud/id/pin/b-l2m0ix9f.2> a m5:Pin ;
+    m5:pinNumber 2 ;
+    m5:pinOf <https://maker-5.cloud/id/block/b-l2m0ix9f> ;
+    m5:pinRole m5:PinVideo ;
+    schema:name "HDMI / video in" .
+
+<https://maker-5.cloud/id/block/b-0gd62dxi> a m5:Block ;
+    m5:blockType m5:Electronic ;
+    m5:canvasX 670 ;
+    m5:canvasY 210 ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:supplyState m5:SupplyThere ;
+    schema:description "Notes: wired at the station; not touched" ;
+    schema:name "The lock" .
+
+<https://maker-5.cloud/id/block/b-4ct2fqmm> a m5:Block ;
+    m5:blockType m5:Electronic ;
+    m5:canvasX 470 ;
+    m5:canvasY 660 ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:supplyState m5:SupplyToBuy ;
+    schema:description "Purpose: the Pi 1 has no Wi-Fi" ;
+    schema:name "Ethernet cable to the door, or a Linux-friendly USB Wi-Fi stick" .
+
+<https://maker-5.cloud/id/block/b-7lm6nrqs> a m5:Block ;
+    m5:blockType m5:Electronic ;
+    m5:canvasX 150 ;
+    m5:canvasY 160 ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:supplyState m5:SupplyThere ;
+    schema:description "Notes: broken; it only gets replaced" ;
+    schema:name "Monitor MZ-IP-V142B" .
+
+<https://maker-5.cloud/id/block/b-l2m0ix9f> a m5:Block ;
+    m5:blockType m5:Electronic ;
+    m5:canvasX 550 ;
+    m5:canvasY 360 ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:supplyState m5:SupplyToBuy ;
+    schema:description "UVC, e.g. MS2109; Purpose: becomes /dev/video0; Notes: or a cheaper USB composite grabber when it's CVBS" ;
+    schema:name "USB HDMI grabber" .
+
+<https://maker-5.cloud/id/block/b-uhxylmim> a m5:Block ;
+    m5:blockType m5:Electronic ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:supplyState m5:SupplyInHand ;
+    schema:description "Status: the indoor door bell screen" ;
+    schema:name "Spare Android phone, Samsung Galaxy A50" .
+
+<https://maker-5.cloud/id/block/b-6911mlng> a m5:Block ;
+    m5:blockType m5:Electronic ;
+    m5:canvasX 50 ;
+    m5:canvasY 20 ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:supplyState m5:SupplyToBuy ;
+    schema:description "Purpose: powers the Pi from the DIN supply; Notes: replaces the Pi's USB power supply" ;
+    schema:name "12 V → 5 V 3 A step-down" .
+
+<https://maker-5.cloud/id/product/everyone> a m5:Product ;
+    schema:name "Door bell" .
+
+<https://maker-5.cloud/id/block/b-6kswk8a0> a m5:Block ;
+    m5:blockType m5:Electronic ;
+    m5:canvasX 130 ;
+    m5:canvasY 280 ;
+    m5:fritzingPart "core/Raspberry_Pi_A.fzp" ;
+    m5:partOf <https://maker-5.cloud/id/product/everyone> ;
+    m5:supplyState m5:SupplyInHand ;
+    schema:description "512 MB, Ethernet, no Wi-Fi; Status: running as dhc-door" ;
+    schema:name "Raspberry Pi 1 Model B" .
+
